@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .page {
-  @apply flex flex-col lg:w-[800px] mx-auto px-8 min-h-full snap-start justify-center items-center py-4 scroll-pl-12;
+  @apply flex flex-col lg:w-[800px] mx-auto px-8 py-4 min-h-full snap-start justify-center items-center scroll-pl-12;
 }
 
 a {
