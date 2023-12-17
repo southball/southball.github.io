@@ -1,0 +1,103 @@
+---
+import type { Locale } from "../i18n";
+import BaseLayout from "../layouts/base.astro";
+import Section from "../components/section.astro";
+import LanguageSelector from "../components/language-selector.astro";
+import { md2html } from "../utils/markdown";
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang: t } = Astro.props;
+---
+
+<BaseLayout title={t.page.title}>
+  <Fragment slot="head">
+    <link
+      rel="icon"
+      type="image/png"
+      href=`${Astro.url.origin}/southball.png`
+    />
+    <meta property="og:title" content={t.page.title} />
+    <meta property="og:description" content={t.page.description} />
+    <meta property="og:image" content={`${Astro.url.origin}/southball.png`} />
+    <meta property="og:url" content={Astro.url.toString()} />
+  </Fragment>
+
+  <div class="PageWrapper">
+    <div class="LanguageSelectorWrapper">
+      <LanguageSelector />
+    </div>
+
+    <h1>{t.content.title}</h1>
+    <img class="ProfilePicture" src="/southball.png" />
+
+    <Section title={t.sections.personalInformation.title}>
+      <ul>
+        <li
+          set:html={md2html(t.sections.personalInformation.kyotoUniversity)}
+        />
+      </ul>
+    </Section>
+
+    <Section title={t.sections.interests.title}>
+      <ul>
+        <li set:html={md2html(t.sections.interests.web)} />
+        <li set:html={md2html(t.sections.interests.kmc)} />
+        <li set:html={md2html(t.sections.interests.ctf)} />
+        <li set:html={md2html(t.sections.interests.competitiveProgramming)} />
+      </ul>
+    </Section>
+
+    <Section title={t.sections.qualifications.title}>
+      <ul>
+        <li set:html={md2html(t.sections.qualifications.IPA_AP)} />
+        <li set:html={md2html(t.sections.qualifications.AWS_SAA)} />
+        <li set:html={md2html(t.sections.qualifications.IPA_DB)} />
+        <li set:html={md2html(t.sections.qualifications.AWS_SCS)} />
+      </ul>
+    </Section>
+
+    <Section title={t.sections.contact.title}>
+      <div>
+        <p set:html={md2html(t.sections.contact.twitter)} />
+        <p set:html={md2html(t.sections.contact.github)} />
+      </div>
+    </Section>
+  </div>
+</BaseLayout>
+
+<style lang="scss" is:global>
+  @media (prefers-color-scheme: dark) {
+    html {
+      background-color: #222222;
+      color: #ffffff;
+    }
+
+    a {
+      color: lightskyblue;
+      &:visited {
+        color: #ca91ff;
+      }
+      &:active {
+        color: white;
+      }
+    }
+  }
+</style>
+
+<style>
+  .PageWrapper {
+    padding: 1rem;
+  }
+
+  .LanguageSelectorWrapper {
+    text-align: right;
+  }
+
+  .ProfilePicture {
+    width: 5rem;
+    margin: 1rem 0;
+  }
+</style>

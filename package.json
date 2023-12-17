@@ -1,19 +1,24 @@
 {
-  "name": "portfolio",
+  "name": "southball.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "",
+  "main": "index.js",
   "scripts": {
-    "build:prod": "tailwindcss -i ./tailwind.css -o ./site/style.css --minify",
-    "watch:css": "tailwindcss -i ./tailwind.css -o ./site/style.css --watch",
-    "server": "live-server --wait=500 --no-browser --no-css-inject site",
-    "dev": "concurrently npm:watch:css npm:server"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "dependencies": {
+    "astro": "^4.0.6",
+    "rehype-stringify": "^10.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.0.0",
+    "unified": "^11.0.4"
+  },
   "devDependencies": {
-    "concurrently": "^7.6.0",
-    "live-server": "^1.2.2",
-    "tailwindcss": "^3.2.4"
+    "sass": "^1.69.5"
   }
 }
