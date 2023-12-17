@@ -23,8 +23,10 @@ jobs:
       - name: Build for production
         run: npm run build
       
-      - name: Create .nojekyll
-        run: touch ./dist/.nojekyll
+      - name: Create .nojekyll and CNAME
+        run: |
+          touch ./dist/.nojekyll
+          echo southball.dev > ./dist/CNAME
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
