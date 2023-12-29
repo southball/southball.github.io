@@ -1,6 +1,7 @@
 export type Locale = typeof en;
 
 export const en = {
+  blog: "Blog",
   page: {
     title: "Southball's Profile",
     description: "Southball's profile page",
@@ -34,6 +35,7 @@ export const en = {
 };
 
 export const ja: Locale = {
+  blog: "ブログ",
   page: {
     title: "Southball のプロフィール",
     description: "Southball のプロフィールページ",
