@@ -16,7 +16,7 @@ export const en = {
       title: "Interests",
       web: `Everything related to web development, especially infrastructure and DevOps`,
       kmc: `Member of [Kyoto Microcomputer Club (KMC)](http://kmc.gr.jp/)`,
-      ctf: `Capture the Flag (CTF) competitions and security: member of [Wani Hackase](https://ctftime.org/team/70717/)`,
+      ctf: `Capture the Flag (CTF) competitions and security: [southball](https://ctftime.org/team/269046), member of [Wani Hackase](https://ctftime.org/team/70717/)`,
       competitiveProgramming: `(In the past) competitive programming: AtCoder ([southball](https://atcoder.jp/users/southball)), Codeforces ([southball](http://codeforces.com/profile/southball))`,
     },
     qualifications: {
@@ -50,7 +50,7 @@ export const ja: Locale = {
       title: "趣味",
       web: `ウェブ開発全般、特にインフラ系`,
       kmc: `[京大マイコンクラブ (KMC)](https://www.kmc.gr.jp/) 会員`,
-      ctf: `Capture the Flag (CTF) コンテストとセキュリティ： [Wani Hackase](https://ctftime.org/team/70717/) メンバー`,
+      ctf: `Capture the Flag (CTF) コンテストとセキュリティ： [southball](https://ctftime.org/team/269046)、[Wani Hackase](https://ctftime.org/team/70717/) メンバー`,
       competitiveProgramming: `（昔）競技プログラミング：AtCoder ([southball](https://atcoder.jp/users/southball)), Codeforces ([southball](http://codeforces.com/profile/southball))`,
     },
     qualifications: {
