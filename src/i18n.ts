@@ -25,6 +25,7 @@ export const en = {
       AWS_SAA: `[AWS Certified Solutions Architect - Associate (SAA)](https://aws.amazon.com/certification/certified-solutions-architect-associate/): since 2022/11`,
       IPA_DB: `[IPA Database Specialist Examination (DB) (Japanese)](https://www.jitec.ipa.go.jp/1_11seido/db.html): since 2022/12`,
       AWS_SCS: `[AWS Certified Security - Specialty (SCS)](https://aws.amazon.com/certification/certified-security-specialty/): since 2023/11`,
+      GCP_ACE: `[GCP Associate Cloud Engineer (ACE)](https://cloud.google.com/learn/certification/cloud-engineer): since 2024/02`,
     },
     contact: {
       title: "Contact",
@@ -59,6 +60,7 @@ export const ja: Locale = {
       AWS_SAA: `[AWS Certified Solutions Architect - Associate (SAA)](https://aws.amazon.com/certification/certified-solutions-architect-associate/)：2022/11～`,
       IPA_DB: `[データベーススペシャリスト試験（DB）](https://www.jitec.ipa.go.jp/1_11seido/db.html)：2022/12～`,
       AWS_SCS: `[AWS Certified Security - Specialty (SCS)](https://aws.amazon.com/certification/certified-security-specialty/)：2023/11〜`,
+      GCP_ACE: `[GCP Associate Cloud Engineer (ACE)](https://cloud.google.com/learn/certification/cloud-engineer): 2024/02～`,
     },
     contact: {
       title: "連絡先",
