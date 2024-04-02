@@ -48,7 +48,6 @@ const { lang: t } = Astro.props;
     <Section title={t.sections.interests.title}>
       <ul>
         <li set:html={md2html(t.sections.interests.web)} />
-        <li set:html={md2html(t.sections.interests.kmc)} />
         <li set:html={md2html(t.sections.interests.ctf)} />
         <li set:html={md2html(t.sections.interests.competitiveProgramming)} />
       </ul>
