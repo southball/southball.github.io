@@ -10,7 +10,7 @@ export const en = {
   sections: {
     personalInformation: {
       title: "Personal Information",
-      kyotoUniversity: `[Kyoto University](https://www.kyoto-u.ac.jp/ja), [Faculty of Engineering](https://www.t.kyoto-u.ac.jp/en), [Undergraduate Course Program of Computer Science](https://www.s-im.t.kyoto-u.ac.jp/com/en), Year 3`,
+      kyotoUniversity: `[Kyoto University](https://www.kyoto-u.ac.jp/ja), [Faculty of Engineering](https://www.t.kyoto-u.ac.jp/en), [Undergraduate Course Program of Computer Science](https://www.s-im.t.kyoto-u.ac.jp/com/en), Year 4`,
     },
     interests: {
       title: "Interests",
@@ -44,7 +44,7 @@ export const ja: Locale = {
   sections: {
     personalInformation: {
       title: "プロフィール",
-      kyotoUniversity: `[京都大学](https://www.kyoto-u.ac.jp/ja) [工学部](https://www.kyoto-u.ac.jp/ja) [情報学科計算機科学コース](https://www.s-im.t.kyoto-u.ac.jp/ja) 3回生`,
+      kyotoUniversity: `[京都大学](https://www.kyoto-u.ac.jp/ja) [工学部](https://www.kyoto-u.ac.jp/ja) [情報学科計算機科学コース](https://www.s-im.t.kyoto-u.ac.jp/ja) 4回生`,
     },
     interests: {
       title: "趣味",
