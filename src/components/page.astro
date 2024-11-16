@@ -15,10 +15,13 @@ const { lang: t } = Astro.props;
 <BaseLayout title={t.page.title}>
   <Fragment slot="head">
     <link
-      rel="icon"
+      rel="alternate icon"
       type="image/png"
-      href=`${Astro.url.origin}/southball.png`
+      sizes="512x512"
+      href=`/southball.png`
     />
+    <link rel="icon" type="image/webp" sizes="512x512" href=`/southball.webp` />
+    <link rel="icon" type="image/avif" sizes="512x512" href=`/southball.avif` />
     <meta property="og:title" content={t.page.title} />
     <meta property="og:description" content={t.page.description} />
     <meta property="og:image" content={`${Astro.url.origin}/southball.png`} />
@@ -35,7 +38,11 @@ const { lang: t } = Astro.props;
     </div>
 
     <h1>{t.content.title}</h1>
-    <img class="ProfilePicture" src="/southball.png" />
+    <picture class="ProfilePicture">
+      <source srcset="/southball.avif" type="image/avif" />
+      <source srcset="/southball.webp" type="image/webp" />
+      <img src="/southball.png" />
+    </picture>
 
     <Section title={t.sections.personalInformation.title}>
       <ul>
